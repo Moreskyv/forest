@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Cabin-semi-bold;
+    src: url(../font/Cabin/static/Cabin-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Cabin-medium;
+    src: url(../font/Cabin/static/Cabin-Medium.ttf);
+}
+
+@font-face {
+    font-family: Cabin-bold;
+    src: url(../font/Cabin/static/Cabin-Bold.ttf);
+}
+
+@font-face {
+    font-family: Signika-medium;
+    src: url(../font/Signika/static/Signika-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-semi-bold;
+    src: url(../font/Montserrat/static/Montserrat-SemiBold.ttf);
+}
