@@ -64,40 +64,56 @@ input {
     font-family: Signika-medium;
     font-size: 24px;
     border-radius: 30px;
-    color: #0D3D63;
     width: 100%;
+    border: 0px solid;
     background-color: #1d7cca00;
-    border: none;
-    padding-left: 30px;
-    transition: 0.5s;
+    outline: none;
+    color: #0D3D63;
 }
 .username-input {
     background-image: url("../images/username.svg");
     background-repeat: no-repeat;
     background-position: 95% 10px;
+    padding-left: 30px;
 }
 .password-input {
     background-image: url("../images/password.svg");
     background-repeat: no-repeat;
     background-position: 95% 10px;
+    padding-left: 30px;
 }
-input[type=text]:focus {
-    border: 3px solid #ffffff;
+input:focus {
+    border: 1px solid white;
+    transition: 0.5s;
   }
 
 ::placeholder {
     color: #0D3D63;
 }
+.login-button-box {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 .login-button { 
     border-radius: 30px;
-    width: 100%;
-
+    width: 350px;
     height: 50px;
+    border: none;
+    font-family: Signika-medium;
+    font-size: 36px;
+    color: #0D3D63;
+    background-color: #fff;
 }
 
 .text-above-box {
-    width: 320px;
+    width: 330px;
     height: 30px;
     top: 0px;
     left: 0;
@@ -111,9 +127,83 @@ input[type=text]:focus {
 }
 
 .remember-me-box {
-    width: 50%;
+    width: 65%;
 
 }
 .forgot-password-box {
     width: 50%;
+    color: #0D3D63;
+    font-size: 18px;
+
+}
+.forgot-password {
+    text-decoration: none;
+    color: #0D3D63;
+}
+
+.checkbox-wrapper-65 *,
+.checkbox-wrapper-65 ::after,
+.checkbox-wrapper-65 ::before {
+box-sizing: border-box;
+}
+.checkbox-wrapper-65 .cbx {
+    position: relative;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #60606200;
+    background-image: linear-gradient(#f5f5f500, #ffffff00);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.15), inset 0 -1px 1px rgba(0,0,0,0.15);
+    transition: all 0.15s ease;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+  }
+  .checkbox-wrapper-65 .cbx svg {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 17;
+    stroke-dashoffset: 17;
+    transform: translate3d(0, 0, 0);
+  }
+  .checkbox-wrapper-65 .cbx + span {
+    float: left;
+    margin-left: 6px;
+  }
+  .checkbox-wrapper-65 {
+    user-select: none;
+  }
+  .checkbox-wrapper-65 label {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-65 input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  .checkbox-wrapper-65 input[type="checkbox"]:checked + .cbx {
+    background-color: #606062;
+    background-image: linear-gradient(#255cd2, #1d52c1);
+}
+  .checkbox-wrapper-65 input[type="checkbox"]:checked + .cbx svg {
+    stroke-dashoffset: 0;
+    transition: all 0.15s ease;
+}
+                               
+.remember-me {
+    color: #0D3D63;
+    font-size: 18px;
+    
+}
+
+.dont-have-account {
+    color: #0D3D63;
+    font-family: Cabin-semi-bold;
+    font-size: 18px;
 }
